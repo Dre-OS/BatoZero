@@ -3,9 +3,9 @@
 ARCH=$(uname -m)
 
 # Download Zerotier
-if [[ "$ARCH" == x86_64* ]]; then
+if [ "$ARCH" == x86_64* ]; then
  curl -LJO https://github.com/Jhaiywroumne/BatoZero/releases/download/Latest/zerotier-one-aarch64.tar.gz
-elif [[ "$ARCH" == arm* ]]; then
+elif [ "$ARCH" == arm* ]; then
  curl -LJO httls://github.com/Jhaiywroumne/BatoZero/releases/download/Latest/zerotier-one-x86_64.tar.gz
 else
     echo Unsupported system architecture
@@ -14,9 +14,9 @@ fi
 
 # Unpack downloaded archive
 mkdir ~/bin
-if [[ "$ARCH" == x86_64* ]]; then
+if [ "$ARCH" == x86_64* ]; then
  tar -xzf zerotier-one-x86_64.tar.gz bin/zerotier-one -C ./bin
-elif [[ "$ARCH" == arm* ]]; then
+elif [ "$ARCH" == arm* ]; then
  tar -xzf zerotier-one-aarch64.tar.gz bin/zerotier-one -C ./bin
 else
     echo Unsupported system architecture
