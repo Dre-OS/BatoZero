@@ -1,24 +1,24 @@
 # BatoZero
 ## Setup
 Installing will require SSH
-- For Windows CMD
+-For Windows CMD
 ```sh
 ssh root@[device-ip]
 ```
 - For Android Access use: [Termux](https://f-droid.org/en/packages/com.termux/)
    * Install APK
    * Update APT
-```sh
-apt-get update
-```
+   ```sh
+   apt-get update
+   ```
    * Install Open SSH
-```sh
-apt-get install openssh
-```
+   ```sh
+   apt-get install openssh
+   ```
    * Connect
-```sh
-ssh root@[device-ip]
-```
+   ```sh
+   ssh root@[device-ip]
+   ```
 ## Installation
 Add Zerotier to your Device
  - Download Install Script
