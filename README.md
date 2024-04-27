@@ -6,9 +6,16 @@ ssh root@[device-ip]
 ```
 
 ## Installation
- - Run auto install script
+ - Download install script
 ```sh
-curl -LJO https://github.com/Jhaiywroumne/BatoZero/blob/main/Batocera.sh
+curl -LJO https://raw.githubusercontent.com/Jhaiywroumne/BatoZero/blob/main/Batocera.sh
+```
+  * Grant Run Permission
+ ```sh
+chmod u+x Batocera.sh
+```
+  * Run install script
+```sh
 ./Batocera.sh | tee ./batocera.log
 ```
  - Enable Startup Service
