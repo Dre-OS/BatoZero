@@ -3,10 +3,6 @@
 ARCH=$(uname -m)
 
 # Download Zerotier
-case $(uname -m) in
-    i386)   architecture="386" ;;
-    i686)   architecture="386" ;;
-    x86_64) architecture="amd64" ;;
 if [[ "$ARCH" == x86_64* ]]; then
     curl -LJO https://github.com/Jhaiywroumne/BatoZero/releases/download/Latest/zerotier-one-aarch64.tar.gz
 elif [[ "$ARCH" == arm* ]]; then
