@@ -31,7 +31,7 @@ chmod u+x Batocera.sh
 ```
  - Run Install Script
 ```sh
-./Batocera.sh | tee ./batocera.log
+./Batocera.sh
 ```
  - Enable Startup Service
      * Open Batocera Menu > System Settings > Services > Enable Zerotier
