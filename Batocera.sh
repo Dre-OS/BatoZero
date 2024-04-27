@@ -7,7 +7,7 @@ case $(uname -m) in
     arm)    arch="arm" ;;
 esac
 
-#Display Arcbitechture
+#Display Architechture
 echo System Arch: $arch
 
 # Download Zerotier
