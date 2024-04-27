@@ -1,6 +1,7 @@
 # BatoZero
 ## Setup
-- Installing will require SSH
+Installing will require SSH
+- For Windows CMD
 ```sh
 ssh root@[device-ip]
 ```
@@ -19,6 +20,7 @@ apt-get install openssh
 ssh root@[device-ip]
 ```
 ## Installation
+Add Zerotier to your Device
  - Download Install Script
 ```sh
 curl -LJO https://raw.githubusercontent.com/Jhaiywroumne/BatoZero/blob/main/Batocera.sh
@@ -39,7 +41,7 @@ Enter Command
 ```
 zerotier-cli <command>
 ```
-Join Netwoek
+Join Network
 ```
 zerotier-cli <network-id>
 ```
@@ -47,4 +49,12 @@ zerotier-cli <network-id>
 See all commands
 ```
 zerotier-cli -h
+```
+# Uninstallation
+Remove Zerotier from your Device
+```sh
+cd /usr/bin
+rm zerotier-one
+cd /userdata/system/services
+rm Zerotier
 ```
