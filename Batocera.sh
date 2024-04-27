@@ -3,6 +3,8 @@
 # Detect Architechture
 arch=""
 case $(uname -m) in
+    i386)   echo architecture="386" ;;
+    i686)   echo architecture="386" ;;
     x86_64) echo x86_64 || arch="amd64" ;;
     arm)    echo ARM || arch="arm" ;;
 esac
