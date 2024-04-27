@@ -3,10 +3,10 @@
 # Detect Architechture
 arch=""
 case $(uname -m) in
-    i386)   echo architecture="386" ;;
-    i686)   echo architecture="386" ;;
-    x86_64) echo x86_64 || arch="amd64" ;;
-    arm)    echo ARM || arch="arm" ;;
+    i386)   echo arch="386" ;;
+    i686)   echo arch="686" ;;
+    x86_64) echo arch="amd64" ;;
+    arm)    echo arch="arm" ;;
 esac
 
 # Download Zerotier
