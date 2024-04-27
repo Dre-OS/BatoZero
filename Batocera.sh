@@ -51,4 +51,5 @@ else
 fi
 
 # Setup Startup File
-curl -LJO https://github.com/Jhaiywroumne/BatoZero/blob/main/Zerotier userdata/system/services
+curl -LJO https://github.com/Jhaiywroumne/BatoZero/blob/main/Zerotier
+mv Zerotier /userdata/system/services/Zerotier
