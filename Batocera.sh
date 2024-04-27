@@ -12,7 +12,7 @@ fi
 
 # Unpack downloaded archive
 mkdir ~/bin
-if [ "$ARCH" == x86_64* ]]; then
+if [[ "$ARCH" == x86_64* ]]; then
   tar -xzf zerotier-one-x86_64.tar.gz bin/zerotier-one -C ./bin
 elif [[ "$ARCH" == arm* ]]; then
   tar -xzf zerotier-one-aarch64.tar.gz bin/zerotier-one -C ./bin
