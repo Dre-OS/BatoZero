@@ -1,8 +1,10 @@
 # BatoZero
 BatoZero is an implementation of [Zerotier](https://github.com/zerotier/ZeroTierOne) tunneling for Multiplayer LAN games to be played over internet configured to work with [Batocera](https://batocera.org/)
+
 ## Support
 Currently supports x86_64 and ARM
 Confirmed Working Devices [here](https://raw.githubusercontent.com/Jhaiywroumne/BatoZero/main/Devices.txt)
+
 ## Setup
 Installing will require SSH
 - For Windows CMD
