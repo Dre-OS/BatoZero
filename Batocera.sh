@@ -1,3 +1,5 @@
+#!/bin/sh
+
 ARCH=$(uname -m)
 
 # Download Zerotier 
