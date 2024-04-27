@@ -28,11 +28,11 @@ curl -LJO https://raw.githubusercontent.com/Jhaiywroumne/BatoZero/main/BatoZero.
 ```
  - Grant Run Permission
  ```sh
-chmod u+x Batocera.sh
+chmod u+x BatoZero.sh
 ```
  - Run Install Script
 ```sh
-./Batocera.sh
+./BatoZero.sh
 ```
  - Enable Startup Service
      * Open Batocera Menu > System Settings > Services > Enable Zerotier
