@@ -35,7 +35,7 @@ chmod u+x BatoZero.sh
 ./BatoZero.sh
 ```
  - Enable Startup Service
-     * Open Batocera Menu > System Settings > Services > Enable Zerotier
+     * Open Batocera Menu > System Settings > [Advanced] Services > Enable Zerotier
 - Restart your device
 
 ## Configuration
