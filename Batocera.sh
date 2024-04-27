@@ -3,8 +3,8 @@
 ARCH=""
 # Detect Architechture
 case $(uname -m) in
-    x86_64) echo architecture="x86_64" ;;
-    arm)    echo architecture="arm" ;;
+    x86_64) ARCH="x86_64" ;;
+    arm)    ARCH="arm" ;;
 esac
 # Download Zerotier
 if [ "$ARCH" == "x86_64" ]; then
