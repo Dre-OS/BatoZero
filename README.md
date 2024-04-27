@@ -1,7 +1,7 @@
 # BatoZero
 ## Setup
 Installing will require SSH
--For Windows CMD
+- For Windows CMD
 ```sh
 ssh root@[device-ip]
 ```
