@@ -1,6 +1,12 @@
 #!/bin/sh
 
 ARCH=$(uname -m)
+case $(uname -m) in
+    i386)   echo architecture="386" ;;
+    i686)   echo architecture="386" ;;
+    x86_64) echo architecture="amd64" ;;
+    arm)    echo architecture="arm" ;;
+esac
 # Download Zerotier
 if [ "$ARCH" == x86_64* ]; then
  curl -LJO https://github.com/Jhaiywroumne/BatoZero/releases/download/Latest/zerotier-one-aarch64.tar.gz
