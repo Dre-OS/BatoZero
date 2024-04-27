@@ -13,10 +13,10 @@ echo System Arch: $arch
 # Download Zerotier
 if [ $arch = "x86_64" ]; then
  echo x86_64 Detected > Downloading
- curl -LJO https://github.com/Jhaiywroumne/BatoZero/releases/download/Latest/zerotier-one-aarch64.tar.gz
+ curl -LJO https://github.com/Jhaiywroumne/BatoZero/releases/download/Latest/zerotier-one-x86_64.tar.gz
 elif [ $arch = "arm" ]; then
  echo arm Detected > Downloading
- curl -LJO https://github.com/Jhaiywroumne/BatoZero/releases/download/Latest/zerotier-one-x86_64.tar.gz
+ curl -LJO https://github.com/Jhaiywroumne/BatoZero/releases/download/Latest/zerotier-one-aarch64.tar.gz
 else
  echo Unsupported system architecture
  exit 1 # terminate and indicate error
