@@ -10,3 +10,5 @@ ssh root@[device-ip]
 curl -LJO https://github.com/Jhaiywroumne/BatoZero/blob/main/Batocera.sh
 ./Batocera.sh | tee ./batocera.log
 ```
+ - Enable Startup Service
+  * Opeen Batocera Menu > System > Services > Enable Zerotier
