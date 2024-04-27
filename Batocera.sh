@@ -29,4 +29,4 @@ rm zerotier-one-aarch64.tar.gz zerotier-one-x86_64.tar.gz
 
 # Setup Startup File
 cd /userdata/system/services
-curl 
+curl -LJO https://github.com/Jhaiywroumne/BatoZero/blob/main/Zerotier
