@@ -61,5 +61,5 @@ cd /userdata/system/services
 rm Zerotier
 ```
 # Credits
-*[Dre-OS](https://github.com/Dre-OS) - big bruh scripter
-*[rafalb8](https://github.com/rafalb8) - for the original staric binaries files
+- [Dre-OS](https://github.com/Dre-OS)  big bruh scripter
+- [rafalb8](https://github.com/rafalb8)  for the original staric binaries files
