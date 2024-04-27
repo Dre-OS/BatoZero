@@ -35,6 +35,7 @@ chmod u+x Batocera.sh
 ```
  - Enable Startup Service
      * Open Batocera Menu > System Settings > Services > Enable Zerotier
+- Restart your device
 
 ## Configuration
 Enter Command
