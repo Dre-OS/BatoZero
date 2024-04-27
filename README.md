@@ -3,7 +3,7 @@ BatoZero is an implementation of [Zerotier](https://github.com/zerotier/ZeroTier
 
 ## Support
 - Currently supports x86_64 and ARM
-- Confirmed Working Devices [here](https://raw.githubusercontent.com/Jhaiywroumne/BatoZero/main/Devices.txt)
+- Confirmned Working Devices [here](https://raw.githubusercontent.com/Jhaiywroumne/BatoZero/main/Devices.txt)
 
 ## Setup
 Installing will require SSH
@@ -61,7 +61,13 @@ See all commands
 ```
 zerotier-cli -h
 ```
-# Uninstallation
+
+## Toggle
+- To turn Zerotier On or Off
+     * Open Batocera Menu > System Settings > [Advanced] Services > Enable/Disable Zerotier
+     * Restart your device
+
+## Uninstallation
 Remove Zerotier from your Device
 ```sh
 cd /usr/bin
