@@ -1,0 +1,12 @@
+LINK_OR_DIR="/usr/lib/zerotier-one"
+DEST_DIR="/userdata/system/configs/zerotier"
+
+# Add configs to /userdata/system
+mv "$LINK_OR_DIR" "$DEST_DIR"
+ln -s "$DEST_DIR" "$LINK_OR_DIR"
+
+# Save overlay
+batocera-save-overlay
+
+# Start Zerotier
+zerotier-one
