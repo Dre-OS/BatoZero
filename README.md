@@ -4,7 +4,7 @@
 ```sh
 ssh root@[device-ip]
 ```
-- For Android Aceess use: Termux(https://f-droid.org/en/packages/com.termux/)
+- For Android Aceess use: [Termux](https://f-droid.org/en/packages/com.termux/)
    * Install APK
    * Update APT
 ```sh
