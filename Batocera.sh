@@ -56,3 +56,4 @@ mv Zerotier /userdata/system/services/
 
 # Clean up script
 rm Batocera.sh
+
