@@ -1,0 +1,5 @@
+[Anbernic]
+- RGXX35 H
+
+[GPD]
+- Win Mini 2023
