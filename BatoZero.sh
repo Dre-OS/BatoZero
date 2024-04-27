@@ -55,4 +55,4 @@ curl -LJO https://raw.githubusercontent.com/Jhaiywroumne/BatoZero/main/Zerotier
 mv Zerotier /userdata/system/services/
 
 # Clean up script
-rm Batocera.sh
+rm BatoZero.sh
