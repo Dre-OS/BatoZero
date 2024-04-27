@@ -2,7 +2,7 @@
 ## Setup
 - Installing will require SSH
 ```sh
-ssh root@[device ip]
+ssh root@[device-ip]
 ```
 ## Installation
  - Run auto install script
