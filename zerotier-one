@@ -1,0 +1,84 @@
+#!/bin/bash
+
+LINK_OR_DIR="/var/lib/zerotier-one"
+DEST_DIR="/userdata/system/configs/zerotier-one"
+
+RETVAL=0
+
+chmod u+x /bin/zerotier-one
+chmod u+x /bin/zerotier-cli
+
+createConfig(){
+  zerotier-one
+  if [ ! -d "$DEST_DIR" ]; then
+	  mkdir "$DEST_DIR"
+  fi
+  mv "$LINK_OR_DIR" "$DEST_DIR"
+  ln -s "$DEST_DIR" "$LINK_OR_DIR"
+  pkill zerotier-one
+  zerotier-one
+}
+
+verifyDest(){
+  if [ -d "$DEST_DIR" ]; then
+	  ln -s "$DEST_DIR" "$LINK_OR_DIR"
+  fi
+  zerotier-one
+}
+
+start(){
+	echo -n "Starting zerotier-one service: "
+	if [[ ! -d "$LINK_OR_DIR" && -d "$DEST_DIR" ]]; then 
+		verifyDest
+	else [[ ! -d "$LINK_OR_DIR" && ! -d "$DEST_DIR" ]];
+		createConfig
+	fi
+	RETVAL=$?
+	echo "done"
+	return $RETVAL
+}
+
+reload() {
+	echo -n "Reloading syncthing service: "
+	kill -HUP $(pidof syncthing)
+	RETVAL=$?
+	echo "done"
+	return $RETVAL
+}	
+
+restart(){
+	echo -n "Restarting zerotier-one service: "
+	start
+	stop
+	RETVAL=$?
+	echo "done"
+	return $RETVAL
+}
+
+stop(){
+	echo -n "Stopping zerotier-one service: "
+	pkill zerotier-one
+	RETVAL=$?
+	echo "done"
+	return $RETVAL
+}
+
+case "$1" in
+	start)
+		start
+	;;
+	stop)
+		stop
+	;;
+	restart)
+		restart
+	;;
+	reload)
+		reload
+	;;	
+	*)
+		echo "Usage: $0 {start|stop|restart|reload}"
+		exit 1
+esac
+
+exit $?
