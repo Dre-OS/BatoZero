@@ -3,7 +3,7 @@ BatoZero is an implementation of [Zerotier](https://github.com/zerotier/ZeroTier
 
 ## Support
 - Currently supports x86_64 and ARM
-- Confirmed Working Devices [here](https://raw.githubusercontent.com/Jhaiywroumne/BatoZero/main/Devices.txt)
+- Confirmed Working Devices [here](https://raw.githubusercontent.com/Dre-OS/BatoZero/main/Devices.txt)
 
 ## Setup
 Installing will require SSH
