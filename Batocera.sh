@@ -41,10 +41,10 @@ install bin/* /usr/bin
 # Cleanup after installation
 if [ $arch = "x86_64" ]; then
  echo Cleaning up x86_64 installation
- rm zerotier-one-aarch64.tar.gz zerotier-one-x86_64.tar.gz
+ rm zerotier-one-x86_64.tar.gz
 elif [ $arch = "arm" ]; then
  echo Cleaning up arm installation
- rm zerotier-one-aarch64.tar.gz zerotier-one-x86_64.tar.gz
+ rm zerotier-one-aarch64.tar.gz
 else
  echo Unsupported system architecture
  exit 1 # terminate and indicate error
