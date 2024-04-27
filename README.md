@@ -59,6 +59,7 @@ cd /usr/bin
 rm zerotier-one
 cd /userdata/system/services
 rm Zerotier
+cd /userdata/systems
 ```
 # Credits
 - [Dre-OS](https://github.com/Dre-OS)  big bruh scripter
