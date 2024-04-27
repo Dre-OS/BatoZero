@@ -52,6 +52,10 @@ Join Network
 ```
 zerotier-cli <network-id>
 ```
+Check Connection
+```
+zerotier-cli info
+```
 
 See all commands
 ```
